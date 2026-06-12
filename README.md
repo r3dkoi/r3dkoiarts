@@ -9,6 +9,7 @@ CSS Guides Used
 https://www.w3schools.com/howto/howto_css_flip_card.asp
 https://www.w3schools.com/html/html5_video.asp
 https://www.w3schools.com/css/css3_fonts.asp
+https://www.w3schools.com/howto/howto_css_fixed_footer.asp
 
 FONTS
 https://freefonts.co/fonts/altero-regular
