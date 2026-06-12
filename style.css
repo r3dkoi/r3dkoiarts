@@ -74,10 +74,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red; /* Delete this later this is for checking container size */
     gap: 10px;
     text-align: center;
-}
+    padding-bottom: 100px;
+    border-bottom: 1px solid var(--light);
+}   
 
 .hero p {
     font-size: 24px;
@@ -85,3 +86,5 @@ nav {
 .hero h1 {
     font-size: 36px;
 }
+
+/* Feature Body */
