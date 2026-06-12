@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koi's Workpieces</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
     <nav>
@@ -11,14 +14,14 @@
         <div class="nav-right">
             <button class="dark-mode-toggle">☽</button> <!-- Change this with img src of light mode/dark mode switch art-->
             <ul class="nav-links">
-                <li><a href="/about.html">Home</a></li> <!-- In JSS, put in place hover effect for the dot decoration whenever user goes above each option-->
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="/index.html">Home</a></li> <!-- In JSS, put in place hover effect for the dot decoration whenever user goes above each option-->
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/about.html">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
-   
+
     <section class="gallery">
         <div class="gallery-track">
 
@@ -69,7 +72,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -93,5 +95,11 @@
             <span>ARTS</span>
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">✕</button>
+        <img src="" alt="" id="lightbox-img">
+    </div> <!--Closes full card overlay-->
+
 </body>
 </html>
