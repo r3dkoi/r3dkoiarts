@@ -54,7 +54,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px 200px;
+  padding: 20px 40px 100px;
 }
 
 .logo img {
@@ -67,6 +67,9 @@ nav {
   flex-direction: column;
   list-style: none;
   gap: 10px;
+  background-color: rgba(0, 31, 61, 0.8); /*Opaque menu background when scrolling through content*/
+  border-radius: 5px;
+
 }
 
 .nav-links a {
@@ -78,8 +81,11 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
+  position: fixed;
+  top: 20px;
+  right: 40px;
 }
-
+/* ------------- HOME PAGE ---------------*/
 /* Homepage Body */
 .hero {
     display: flex;
@@ -126,6 +132,9 @@ nav {
     max-width:800px;
     max-height: 400px;
 }
+
+/* ------------- HOME PAGE END ---------------*/
+
 /* Footer */
 footer {
     margin-top: auto;
@@ -168,3 +177,120 @@ footer {
     font-size: 58px;
     font-family: 'Altero', sans-serif;
 }
+
+/* ------------- ABOUT PAGE  ---------------*/
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 40px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.profile-photo img {
+    border-radius: 50px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    max-width: 50%
+}
+
+/* ------------- ABOUT PAGE END  ---------------*/
+
+
+/* ------------- GALLERY PAGE  ---------------*/
+
+.gallery {
+    padding: 80px 40px;
+}
+
+
+/* Cards auto-fill rows at min 280px wide; new cards stack downward when a row is full */
+.gallery-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    width: 100%; /* grid controls width */
+    height: 400px;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.inner-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .inner-card {
+  transform: rotateY(180deg);
+}
+
+.workpiece_display,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.workpiece_display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back {
+  background-color: var(--navy);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+.lightbox-close { /* Need to code this part in JSS */
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  color: var(--light);
+  font-size: 32px;
+  cursor: pointer;
+}
+/* ------------- GALLERY PAGE END ---------------*/
