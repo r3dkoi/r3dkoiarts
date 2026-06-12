@@ -1,0 +1,19 @@
+
+/* Loading local fonts */
+@font-face {
+    font-family: 'Altero';
+    src: url(fonts/Altero_regular/Altero\ Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url(fonts/Questrial-Regular.ttf) format('truetype');
+}
+
+/* Main Colour Palette Reusauble */
+:root {
+  --navy: #001F3D;
+  --orange: #ED985F;
+  --peach: #F7B980;
+  --light: #E6E6E6;
+}
