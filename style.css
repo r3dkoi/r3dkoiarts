@@ -17,3 +17,31 @@
   --peach: #F7B980;
   --light: #E6E6E6;
 }
+
+/* Resetting browser margin and padding to elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Style */
+body {
+    background-color: var(--navy);
+    color: var(--peach);
+    font-family: 'Questrial', sans-serif /* fallback to any sans serif */
+
+}
+
+h1, h2, h3 {
+    font-family: 'Altero', sans-serif;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
