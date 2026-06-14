@@ -13,9 +13,12 @@
 /* Main Colour Palette Reusauble */
 :root {
   --navy: #001F3D; /* 60% */
-  --orange: #ED985F; /* 30% */
+  --orange: #ED985F; /* 30% */ 
   --peach: #F7B980; /* 10% */
   --light: #E6E6E6; /* 30% */
+  --background-dark: #2A272F; 
+  --text-dark: #C7BBFB; /*Text colour */
+  --highlight-dark: #A8F3FF; /* For links, accents, borders etc */
 }
 
 /* Resetting browser margin and padding to elements */
@@ -45,14 +48,17 @@ h1, h2, h3 {
 }
 
 
-/* Dark Mode */ 
+/* DARK MODE START */ 
 body.dark {
-  --background-dark: #2A272F; 
-  --text-dark: #C7BBFB; /*Text colour */
-  --highlight-dark: #A8F3FF; /* For links, accents, borders etc */
+    background-color: var(--background-dark);
+    color: var(--text-dark);
 }
 
-/* Dark Mode Toggle */
+body.dark .nav-links a {
+    color: var(--highlight-dark);
+}
+
+
 .dark-mode-toggle {
     background-color: rgba(0, 0, 0, 0.6);
     border: none;
@@ -64,6 +70,7 @@ body.dark {
     color: var(--peach);
 }
 
+/* DARK MODE END */
 
 /* Navigation */
 nav {
