@@ -13,6 +13,7 @@
 /* Main Colour Palette Reusauble */
 :root {
   --navy: #001F3D; /* 60% */
+  --secondary: #323960; /*30% */
   --orange: #ED985F; /* 30% */ 
   --peach: #F7B980; /* 10% */
   --light: #E6E6E6; /* 30% */
@@ -50,13 +51,14 @@ h1, h2, h3 {
 }
 
 
-/* DARK MODE START */ 
+/* DARK MODE */ 
 body.dark {
     background-color: var(--background-dark);
     color: var(--headers-dark);
 }
 
-body.dark .nav-links {
+body.dark .nav-links,
+body.dark .card-back {
     background-color: rgba(42, 39, 47, 0.8);
 }
 
@@ -111,7 +113,7 @@ nav {
   flex-direction: column;
   list-style: none;
   gap: 10px;
-  background-color: rgba(0, 31, 61, 0.8); /*Opaque menu background when scrolling through content*/
+  /*background-color: rgba(0, 31, 61, 0.8); /*Opaque menu background when scrolling through content*/
   border-radius: 5px;
 
 }
@@ -159,6 +161,7 @@ nav {
     text-align: center;
     gap: 20px;
     padding-bottom: 50px;
+    background-color: var(--secondary);
 }
 
 .featured h1 {
@@ -381,3 +384,12 @@ form {
     gap: 50px;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    /* tablet adjustments */
+}
+
+@media (max-width: 480px) {
+    /* phone adjustments */
+}
