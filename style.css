@@ -25,8 +25,11 @@
   --highlight-dark: #A8F3FF; /* For links, accents, borders etc */
 }
 
-/* Resetting browser margin and padding to elements */
+html {
+    font-size: clamp(16px, 2vw, 20px);
+}
 
+/* Resetting browser margin and padding to elements */
 * {
   margin: 0;
   padding: 0;
@@ -128,7 +131,7 @@ nav {
 .nav-links a {
   color: var(--peach);
   text-decoration: none;
-  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
 
 .nav-right {
@@ -146,19 +149,20 @@ nav {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    padding: 0 clamp(16px, 5vw, 80px);
 }   
 
 .hero p {
-    font-size: clamp(1rem, 1.87vw, 1.5rem)
+    font-size: clamp(1.25rem, 1.87vw, 1.5rem)
 }
 .hero h1 {
-    font-size: clamp(1.4rem, 6vw, 2.25rem) /* scales between min and max based on viewport */
+    font-size: clamp(1.75rem, 6vw, 2.25rem) /* scales between min and max based on viewport */
 }
 
 /* Section Border Style */
 .section-border-style {
     text-align:center;
-    font-size: clamp(1.1rem, 2.5vw, 1.875rem);
+    font-size: clamp(1.3rem, 2.5vw, 1.875rem);
     color: var(--peach);
     padding: clamp(40px, 10vw, 100px);
     background: linear-gradient(180deg, var(--navy), var(--secondary)); /* To differentiate between rows */
@@ -169,18 +173,19 @@ nav {
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    padding-bottom: 50px;
+    padding: 0 clamp(16px, 5vw, 80px) 50px;
     background-color: var(--secondary);
 }
 
 .featured h1 {
     padding-bottom: 10px;
-    font-size: clamp(1.25rem, 3vw, 2.25rem);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
 }
 
 .featured ul {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     color: var(--light);
+    list-style: none;
 }
 
 /* Featured Video */
@@ -242,6 +247,7 @@ footer {
 /* ------------- ABOUT PAGE  ---------------*/
 .about {
     display: flex;
+    flex: 1;
     align-items: center;
     gap: 50px;
     padding: 80px 40px;
@@ -400,17 +406,21 @@ form {
 
 }
 
-@media (max-width: 480px) {
-    /* phone adjustments */
+@media (max-width: 690px) {
     .nav-right {
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
         right: 16px;
         top: 16px;
-    }
+    } /* Keeps nav links and toggle side-by-side and no overflow */
 
     .hero {
-        padding-top: 120px;
+        padding-top: 120px 20px 0;
+    } /* pushes content below stacked nav links */
+
+    .about {
+        flex-direction: column;
     }
+
 }
