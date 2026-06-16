@@ -16,3 +16,7 @@ toggle.addEventListener('click', function() {
         localStorage.setItem('darkMode', 'disabled');
     }
 });
+
+// DARK MODE END //
+
+// NAV LINK INTERACTIVITY //
