@@ -18,6 +18,7 @@
   --peach: #F7B980; /* 10% */
   --light: #E6E6E6; /* 30% */
   --background-dark: #2A272F; 
+  --background-dark-secondary: #404452; 
   --footer-dark: #0C0C0D; /*Background footer */
   --headers-dark: #29C8E0; 
   --text-dark: #C7BBFB; /*Text colour */
@@ -57,7 +58,6 @@ body.dark {
     color: var(--headers-dark);
 }
 
-body.dark .nav-links,
 body.dark .card-back {
     background-color: rgba(42, 39, 47, 0.8);
 }
@@ -67,11 +67,18 @@ body.dark .dark-mode-toggle {
     color: var(--highlight-dark);
 }
 
-body.dark .section-border-style,
 body.dark .footer-top p{
     color: var(--headers-dark);
 }
 
+body.dark .section-border-style {
+    background: linear-gradient(180deg, var(--background-dark), var(--background-dark-secondary));
+    color: var(--headers-dark);
+}
+
+body.dark .featured {
+    background-color: var(--background-dark-secondary);
+}
 body.dark p,
 body.dark ul {
     color: var(--text-dark);
@@ -153,6 +160,7 @@ nav {
     font-size: 30px;
     color: var(--peach);
     padding: 100px;
+    background: linear-gradient(180deg, var(--navy), var(--secondary)); /* To differentiate between rows */
 }
 /* Feature Body */
 .featured {
