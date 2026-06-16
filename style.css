@@ -396,8 +396,17 @@ form {
 
 @media (max-width: 768px) {
     /* tablet adjustments */
+
 }
 
 @media (max-width: 480px) {
     /* phone adjustments */
+    .nav-right {
+        right: 16px;
+        top: 16px;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
 }
