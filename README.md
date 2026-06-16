@@ -12,6 +12,7 @@ https://www.w3schools.com/css/css3_fonts.asp
 https://www.w3schools.com/howto/howto_css_fixed_footer.asp
 https://freefrontend.com/css-theme-switches/
 https://imabi.org/ 
+https://www.w3schools.com/css/css3_gradients.asp
 
 FONTS
 https://freefonts.co/fonts/altero-regular
