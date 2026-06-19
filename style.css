@@ -82,12 +82,14 @@ body.dark .section-border-style {
 body.dark .featured {
     background-color: var(--background-dark-secondary);
 }
+
 body.dark p,
 body.dark ul {
     color: var(--text-dark);
 }
 
-body.dark footer {
+body.dark footer,
+body.dark .featured li {
     background-color: var(--footer-dark);
 }
 
@@ -195,7 +197,12 @@ nav {
 .featured li {
     background-color: var(--light);
     border-radius: 8px;
-    display: inline-block; /* Keeps it from stretching to full width of ul block */
+    list-style-type: "★ ";
+    list-style-position: inside; /* Allows list deco to be part of background color width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content; /* Prevents background colour from stretching to full */
+    margin: 0 auto 18px; /* Provides a gap between each li */
+    
 }
 
 /* Featured Video */
