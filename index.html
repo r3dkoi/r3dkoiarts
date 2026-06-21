@@ -17,12 +17,13 @@
     <!--The Home Page-->
 </head>
 <body>
+    <!-- Navigation — fixed to top right, shared across all pages -->
     <nav>
-        <div class="logo"><img src="images/logo.png" alt="r3dkoiarts watermark logo"></div> 
+        <div class="logo"><img src="images/logo.png" alt="r3dkoiarts watermark logo"></div>
         <div class="nav-right">
-            <button class="dark-mode-toggle">☽</button> <!-- Change this with img src of light mode/dark mode switch art-->
+            <button class="dark-mode-toggle">☽</button> <!-- dark/light mode toggle, preference saved to localStorage -->
             <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li> <!-- In JSS, put in place hover effect for the dot decoration whenever user goes above each option-->
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact.html">Contact</a></li>
@@ -30,14 +31,17 @@
         </div>
     </nav>
 
+    <!-- Hero section — main introduction text -->
     <section class="hero">
         <h1>TAKING ONE DAY AT A TIME</h1>
         <p>Studying Computer Science with the hopes of being a Fullstack Developer. Preference on UI/UX Design.</p>
         <p>I do digital art on the side, and hope to draw my own assets in my own work when I can.</p>
     </section>
-    
+
+    <!-- Decorative divider between hero and featured sections -->
     <div class="section-border-style">𓆝 𓆟 𓆞</div>
 
+    <!-- Featured project -->
     <section class="featured">
         <h1>DEADLINK - psychological horror visual novel prototype</h1>
         <ul>
@@ -53,6 +57,7 @@
         </div>
     </section>
 
+    <!-- Footer — copyright, social links, and brand name -->
     <footer>
         <div class="footer-top">
             <p>© 2026 Kyla Sofocado</p>

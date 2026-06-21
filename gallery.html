@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | r3dkoiarts</title>
     <link rel="stylesheet" href="style.css">
+    <script src="gallery-data.js" defer></script> <!-- must load before script.js so galleryData is available -->
     <script src="script.js" defer></script>
     <!-- Tells search engines what this page is about — shows under the link in Google results -->
     <meta name="description" content="Digital artwork by me.">
@@ -17,12 +18,13 @@
 <!-- Workpieces Showcase -->
 </head>
 <body>
+    <!-- Navigation — fixed to top right, shared across all pages -->
     <nav>
         <div class="logo"><img src="images/logo.png" alt="r3dkoiarts watermark logo"></div>
         <div class="nav-right">
-            <button class="dark-mode-toggle">☽</button> <!-- Change this with img src of light mode/dark mode switch art-->
+            <button class="dark-mode-toggle">☽</button> <!-- dark/light mode toggle, preference saved to localStorage -->
             <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li> <!-- In JSS, put in place hover effect for the dot decoration whenever user goes above each option-->
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact.html">Contact</a></li>
@@ -30,64 +32,19 @@
         </div>
     </nav>
 
+    <!-- Gallery intro  -->
     <section class="gallery-information">
         <h2>DIGITAL ARTWORK</h2>
         <p class="subtitle">Hover or Tap on each piece to read more about them!</p>
         <p>All art have been drawn by me using Clip Studio Paint. A variety of them are fanart or from my own personal passion projects.</p>
     </section>
+
+    <!-- Gallery grid  -->
     <section class="gallery">
-        <div class="gallery-track">
-
-            <div class="card">
-                <div class="inner-card">
-                    <div class="workpiece_display">
-                        <img src="images/Gallery_photos/metaphor_re.jpg" alt="Digital artwork of Neuras sitting on a chair, from Metaphor ReFantazio">
-                    </div>
-                    <div class="card-back">
-                        <h3>Neuras from Metaphor Re-Fantazio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quisquam! Minus ipsa distinctio accusamus? Qui ab, expedita vel eum ratione deserunt consequatur quia labore, officia est soluta dolor? Debitis, est!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="inner-card">
-                    <div class="workpiece_display">
-                        <img src="images/Gallery_photos/dante.jpg" alt="Digital artwork of Dante from Limbus Company">
-                    </div>
-                    <div class="card-back">
-                        <h3>Dante from Limbus Company</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quisquam! Minus ipsa distinctio accusamus? Qui ab, expedita vel eum ratione deserunt consequatur quia labore, officia est soluta dolor? Debitis, est!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="inner-card">
-                    <div class="workpiece_display">
-                        <img src="images/Gallery_photos/deltarune.jpg" alt="Digital artwork of Tenna from Deltarune">
-                    </div>
-                    <div class="card-back">
-                        <h3>Tenna from Deltarune</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quisquam! Minus ipsa distinctio accusamus? Qui ab, expedita vel eum ratione deserunt consequatur quia labore, officia est soluta dolor? Debitis, est!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="inner-card">
-                    <div class="workpiece_display">
-                        <img src="images/Gallery_photos/orion.jpg" alt="Digital artwork of my original character, Orion Divon">
-                    </div>
-                    <div class="card-back">
-                        <h3>Orion Divon, from my original work, The Interstellar</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quisquam! Minus ipsa distinctio accusamus? Qui ab, expedita vel eum ratione deserunt consequatur quia labore, officia est soluta dolor? Debitis, est!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="gallery-track"></div>
     </section>
 
+    <!-- Footer — copyright, social links, and brand name -->
     <footer>
         <div class="footer-top">
             <p>© 2026 Kyla Sofocado</p>
@@ -106,7 +63,7 @@
         </div>
     </footer>
 
-    <!-- Lightbox commented out until I get back to doing this lol
+    <!-- Lightbox commented out until I decide if I want the feature of popping out the artwork into its own little screen
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightbox-close">✕</button>
         <img src="" alt="" id="lightbox-img">

@@ -17,29 +17,34 @@
     <!--About Page -->
 </head>
 <body>
+    <!-- Navigation — fixed to top right, shared across all pages -->
     <nav>
         <div class="logo"><img src="images/logo.png" alt="r3dkoiarts watermark logo"></div>
         <div class="nav-right">
-            <button class="dark-mode-toggle">☽</button> <!-- Change this with img src of light mode/dark mode switch art-->
+            <button class="dark-mode-toggle">☽</button> <!-- dark/light mode toggle, preference saved to localStorage -->
             <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li> <!-- In JSS, put in place hover effect for the dot decoration whenever user goes above each option-->
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- About section  -->
     <section class="about">
         <div class="profile-photo">
             <img src="images/pfp_placeholder.gif">
         </div>
         <div class="about-container">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Ab, veniam id, beatae, libero quis voluptatum eum nisi ullam voluptates mollitia minus neque 
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ab, veniam id, beatae, libero quis voluptatum eum nisi ullam voluptates mollitia minus neque
                 officiis nulla deleniti perferendis quas. Quisquam, architecto quas.</p>
         </div>
     </section>
+
+    <!-- Footer — copyright, social links, and brand name -->
     <footer>
         <div class="footer-top">
             <p>© 2026 Kyla Sofocado</p>
