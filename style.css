@@ -54,6 +54,9 @@ h1, h2, h3 {
     color: var(--orange);
 }
 
+form label {
+    color: var(--orange); 
+}
 
 /* DARK MODE */ 
 body.dark {
@@ -68,10 +71,9 @@ body.dark .card-back {
     background-color: rgba(42, 39, 47, 0.8);
 }
 
-body.dark h1, h2, h3{
-    color: var(--headers-dark);
+body.dark h1, body.dark h2, body.dark h3, body.dark form label{
+    color: var(--headers-dark); /* overrides orange headings in dark mode */
 }
-
 
 body.dark .nav-links a,
 body.dark .dark-mode-toggle {
@@ -89,7 +91,6 @@ body.dark .section-border-style {
     background: linear-gradient(180deg, var(--background-dark), var(--background-dark-secondary));
     color: var(--headers-dark);
 }
-
 body.dark .featured {
     background-color: var(--background-dark-secondary);
 }
