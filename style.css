@@ -109,6 +109,9 @@ body.dark .subtitle {
 
 
 .dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
     border: none;
     border-radius: 50%;
@@ -117,6 +120,14 @@ body.dark .subtitle {
     font-size: clamp(14px, 1.5vw, 18px);
     cursor: pointer;
     color: var(--peach);
+}
+
+.dark-mode-toggle:hover {
+    background-color: var(--orange);
+}
+
+body.dark .dark-mode-toggle:hover {
+    background-color: var(--secondary);
 }
 
 /* DARK MODE END */
@@ -394,7 +405,7 @@ footer {
   padding: 24px;
 }
 
-/* Lightbox */
+/* Lightbox — commented out until I bother to getting back to this lol
 .lightbox {
   display: none;
   position: fixed;
@@ -415,7 +426,7 @@ footer {
   border-radius: 8px;
 }
 
-.lightbox-close { /* Need to code this part in JSS */
+.lightbox-close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -425,6 +436,7 @@ footer {
   font-size: clamp(1.5rem, 2.7vw, 2rem);
   cursor: pointer;
 }
+*/
 /* ------------- GALLERY PAGE END ---------------*/
 
 /* ------------- CONTACT PAGE ---------------*/
@@ -438,7 +450,6 @@ form textarea {
     height: 150px;
     resize: vertical;
 }
-
 
 .contact {
     display: flex;
@@ -459,6 +470,31 @@ form {
     display: flex;
     gap: 50px;
 }
+
+button {
+    background-color: var(--peach);
+    color: var(--footer-dark);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    max-width: fit-content;
+}
+
+button:hover {
+    background-color: var(--orange);
+}
+
+
+
+
+
+
+/* ------------- CONTACT PAGE  END ---------------*/
+
+
+
 
 /* MEDIA QUERIES */
 
