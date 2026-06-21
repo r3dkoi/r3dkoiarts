@@ -107,6 +107,16 @@ body.dark .subtitle {
     background-color: var(--footer-dark);
 }
 
+body.dark form button {
+    background-color: var(--highlight-dark);
+    color: var(--footer-dark);
+    transition: background 0.3s ease-in-out;
+}
+
+body.dark form button:hover {
+    background-color: var(--headers-dark);
+}
+
 
 .dark-mode-toggle {
     display: flex;
