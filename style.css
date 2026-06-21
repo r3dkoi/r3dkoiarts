@@ -186,7 +186,8 @@ nav {
 .featured {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    text-align: left;
     gap: 20px;
     padding: 0 clamp(16px, 5vw, 80px) 50px;
     background-color: var(--secondary);
@@ -211,7 +212,7 @@ nav {
     list-style-position: inside; /* Allows list deco to be part of background color width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: fit-content; /* Prevents background colour from stretching to full */
-    margin: 0 auto 18px; /* Provides a gap between each li */
+    margin: 0 0 18px; /* Provides a gap between each li */
     
 }
 
