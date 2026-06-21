@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage — highest priority, main entry point -->
+  <url>
+    <loc>https://r3dkoi.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Gallery — core content, second most important -->
+  <url>
+    <loc>https://r3dkoi.github.io/gallery.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About — supporting content -->
+  <url>
+    <loc>https://r3dkoi.github.io/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact — least critical for discoverability -->
+  <url>
+    <loc>https://r3dkoi.github.io/contact.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,16 @@
+/* TEAM */
+Artist & Developer: Kyla Sofocado
+GitHub: https://github.com/r3dkoi
+Site: https://r3dkoi.github.io/
+
+/* THANKS */
+Clip Studio Paint -- digital art tool used for all artwork
+GitHub Pages -- free hosting
+W3C Schools -- CSS and HTML Guides
+
+/* SITE */
+Last update: 2026/06/21
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code
+Standards: HTML5, CSS3, Vanilla JS
