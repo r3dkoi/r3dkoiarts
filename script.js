@@ -36,7 +36,6 @@ if (form) {
         // Show success message and clear the form
         const formMessage = document.getElementById('form-message');
         formMessage.textContent = "Message sent successfully, will be back to you soon.";
-        formMessage.style.color = "green"; // makes the message clearly visible
         form.reset(); // clears all fields after successful submission
     });
 }
