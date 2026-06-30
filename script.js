@@ -33,12 +33,10 @@ if (form) {
         const message = document.getElementById('message').value;
 
         // Check if any field is empty
-        if (name === '' || email === '' || subject === '' || message === '') {
-            alert('Please fill in all fields before sending.');
-        } else {
-            alert("Message sent! I'll get back to you soon.");
-            form.reset(); // clears all fields after successful submission
-        }
+        // Show success message and clear the form
+        const formMessage = document.getElementById('form-message');
+        formMessage.textContent = "Message sent successfully, will be back to you soon.";
+        form.reset(); // clears all fields after successful submission
     });
 }
 // FORM VALIDATION END //
